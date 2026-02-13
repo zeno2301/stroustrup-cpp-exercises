@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int i = 1;
+    int i = 0; // исправил 
 
     while (i < 26){
         cout << char('a' + i) << "\t" 
