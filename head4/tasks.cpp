@@ -106,3 +106,23 @@ int main()
     }
     return 0;
 }
+
+
+
+int square(int a)
+{
+    int result = 0;
+    for (int i = 0; i < a; ++i) {
+        result += a;
+    }
+
+    return result;
+}
+
+
+int main()
+{
+    cout << square(2) << "\n";
+    cout << square(10) << "\n";
+
+}
