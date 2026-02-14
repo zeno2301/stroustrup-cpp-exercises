@@ -126,3 +126,21 @@ int main()
     cout << square(10) << "\n";
 
 }
+
+
+
+
+    vector<double> temps;
+    for (double temp; cin >>temp; ) // чтение в temp
+        temps.push_back(temp); //вносим темп в вектор 
+
+    // Вычислление средней температуры 
+    double sum = 0;
+    for (int x : temps) sum += x; 
+    cout << "Средняя температура: "
+        << sum/temps.size() << '\n';
+    
+    // Вычисление медианы температуры 
+    sort(temps); // сортировка вектора температуры 
+    cout << "Медианная температура: "
+        << temps[temps.size()/2] << '\n';
