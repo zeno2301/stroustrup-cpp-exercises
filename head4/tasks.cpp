@@ -144,3 +144,37 @@ int main()
     sort(temps); // сортировка вектора температуры 
     cout << "Медианная температура: "
         << temps[temps.size()/2] << '\n';
+
+
+
+
+
+
+
+
+
+bool is_in_vector(const string& word,  const vector<string>& vec) {
+    for (int i = 0; i < vec.size(); ++i) {
+        if (vec[i] == word) return true;
+    }
+    return false;
+}
+
+
+    vector<string> disliked = {"Broccoli", "Banana", "Apple"};
+//Простой словарь, список упорядоченных слов 
+    vector<string> words;
+    for (string temp; cin >> temp; ) // чтение слов, разделенынми пробелами
+        words.push_back(temp);
+    cout << "Колличество слов: " << words.size() << '\n';
+
+    sort(words);
+    for (int i = 0; i < words.size(); ++i) {
+        if (i == 0 || words[i-1] != words[i]) { // проверка на повторение
+            if (is_in_vector(words[i], disliked)) {
+                cout << "BLEEP" << '\n';
+            } else {
+                cout << words[i] << '\n';
+            }
+        }
+    }
