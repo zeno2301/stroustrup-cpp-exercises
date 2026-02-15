@@ -8,8 +8,9 @@ using namespace std;
 
 int main()
 {
-    
-
-
-
+    int a, b;
+    while (cin >> a >> b) {
+        cout << a << "и" << b << '\n';
+    }
+    cout << "Программа завершена\n"; 
 }       
