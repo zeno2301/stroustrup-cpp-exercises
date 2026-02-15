@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    double a, b;
     while (cin >> a >> b) {
         cout << a << " и " << b << '\n';
 
