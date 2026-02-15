@@ -7,31 +7,32 @@ using namespace std;
 
 int main()
 {
-    double a, b;
-    while (cin >> a >> b) {
-        cout << a << " и " << b << '\n';
+    double num;
 
-        double diff = abs(a-b); // разница между числами 
-        if (diff < 0.01) {
-            cout << "Числа почти равны \n";
+    //Считыавем первое число
+    if (!(cin >> num)) {
+        cout << "Нет чисел\n";
+        return 0;
+    }
+
+    cout << num << "\n";
+    double min_val = num; 
+    double max_val = num;
+    cout << "Наименьшее среди введенных\n";
+    cout << "Наибольшее среди введенных\n";
+
+
+    // теперь считываеи остальные 
+    while (cin >> num) {
+        cout << num << '\n';
+    
+        if (num < min_val) {
+            min_val = num;
+            cout << "Наименьшее среди введенных значений ";
         }
-        else if (a == b) {
-            cout << "Числа равны\n";
-        }
-        else {
-        
-            if (a < b) {
-                cout << "Наименьшее значение равно: " << a << '\n';
-            }
-            else {
-                cout << "Наименьшее значение равно: " << b << '\n';
-            }
-            if (a > b) {
-                cout << "Наибольшее значение: " << a << '\n';
-            }
-            else {
-                cout << "Наибольшее значение: " << b << '\n';
-            }
+        if (num > max_val) {
+            max_val = num;
+            cout << "Наибольшее среди введенных значений ";
         }
     }
     cout << "Программа завершена\n"; 
