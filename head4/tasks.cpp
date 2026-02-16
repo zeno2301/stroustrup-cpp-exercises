@@ -214,3 +214,81 @@ int main()
     cout << "Программа завершена\n"; 
 }       
     
+// 9 -11 
+#include<iostream>
+using namespace std;
+#include "std_lib_facilities.h"
+#include <cmath>
+
+
+// функция преобразования в см 
+double to_m (double value, string unit) {
+    if (unit == "m") return value;
+    if (unit == "cm") return value / 100;
+    if (unit == "in") return value * 0.0254;
+    if (unit == "ft") return value * 0.3048;
+    return -1;  // неизвестная единица 
+}
+// функция для вывода вектора
+void print_vector(const vector<double>& vec) {
+    cout << "Все введенные значения (в метрах): \n";
+    for (double value : vec) {
+        cout << value << "m\n";
+    }
+}
+
+
+
+
+int main()
+{
+    vector<double> all_nums;
+    double num;
+    string unit; 
+    //Считыавем первое число
+    
+    if (!(cin >> num >> unit)) {
+        cout << "Нет чисел\n";
+        return 0;
+    }
+
+    double value_cm = to_m(num, unit);
+
+    cout << num << unit <<"\n";
+    double min_val = value_cm; 
+    double max_val = value_cm;
+    all_nums.push_back(value_cm);
+    double sum = value_cm; 
+    int amount = 1;
+
+    // теперь считываеи остальные 
+    while (cin >> num >> unit) {
+        
+        value_cm = to_m(num, unit);
+
+        if (value_cm < 0) {
+            cout << "Единица измерения отклонена ";
+            continue;
+        }
+        cout << num << unit << '\n';
+        if (value_cm < min_val) {
+            min_val = value_cm;
+            cout << "Наименьшее среди введенных значений " << min_val << "\n";
+        }
+        if (value_cm > max_val) {
+            max_val = value_cm;
+            cout << "Наибольшее среди введенных значений " << max_val << "\n";
+        }
+        all_nums.push_back(value_cm);
+        sum+=value_cm;
+        ++amount;
+    }
+    sort(all_nums);
+    print_vector(all_nums);
+
+    cout << "Кол-во введенных значений: " << amount << "\n";
+    cout << "Их сумма будет: " << sum << "\n"; 
+    cout << "Наименьшее значение " << min_val << "m\n";
+    cout << "Наибольшее значение " << max_val << "m\n";
+    cout << "Программа завершена\n"; 
+}       
