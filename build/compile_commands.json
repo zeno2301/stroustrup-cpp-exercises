@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\prog.dir\\main.cpp.obj -c C:\\Users\\KonstantinZZ\\Desktop\\C++\\learn\\standart11-14_straustrup\\main.cpp",
+  "file": "C:/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/main.cpp",
+  "output": "CMakeFiles/prog.dir/main.cpp.obj"
+}
+]

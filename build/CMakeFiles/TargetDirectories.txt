@@ -1,3 +1,3 @@
-/mnt/c/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/prog.dir
-/mnt/c/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/rebuild_cache.dir
+C:/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/prog.dir
+C:/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/edit_cache.dir
+C:/Users/KonstantinZZ/Desktop/C++/learn/standart11-14_straustrup/build/CMakeFiles/rebuild_cache.dir
