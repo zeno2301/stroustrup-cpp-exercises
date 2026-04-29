@@ -8,6 +8,7 @@
 standart11-14_straustrup/
 ├── head3/              # Глава 3: Объекты, типы и значения
 ├── head4/              # Глава 4: Вычисления
+├── head6/              # Глава 5: Ошибки
 ├── c_code/             # Примеры на C
 ├── codeTranslate/      # Переводы кода
 ├── psevdocode/         # Псевдокод и алгоритмы
@@ -71,14 +72,7 @@ g++ head4/task01_temperature_average.cpp -o task01
 - ✅ Константы (const, constexpr)
 - ✅ Ссылки (const&)
 
-### Алгоритмы:
-- Бинарный поиск
-- Решето Эратосфена
-- Поиск моды
-- Статистические вычисления (среднее, медиана, мин/макс)
-
 ## Полезные ресурсы
-
 - [Книга Страуструпа](https://www.stroustrup.com/programming.html)
 - [cppreference.com](https://en.cppreference.com/)
 - [LeetCode](https://leetcode.com/) - для практики алгоритмов
@@ -106,4 +100,4 @@ g++ head4/task01_temperature_average.cpp -o task01
 
 ---
 
-**Последнее обновление:** 2024
+**Последнее обновление:** 2026
